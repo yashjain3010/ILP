@@ -1,0 +1,26 @@
+Array :- Represent the similar types of datatypes element
+
+Eg. let arr1 = [1,2,4,5,5,5,3,3,2,3,4];
+
+for(let i = 0 ; i < arr1.size() ; i++){
+    console.log(arr1[i]);
+}
+
+Object :- Represent the mix types of datatypes element
+
+Eg. let obj1 = {
+    name : "Yash Jain",
+    age : "23",
+    DOB : "30-10-2000",
+    id : 1
+    greet: function(){
+        console.log("Hello")
+    }
+}
+
+Object Constructor :- 
+
+let obj2 = new Object();
+
+obj2.name = "Yash";
+obj2.age = "23";
