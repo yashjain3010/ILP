@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 4 Question 4</title>
+    <script>
+        function getDiff(){
+        let value = parseFloat(document.getElementById('number').value)
+        let result;
+        if(value > 13){
+            result = 2*Math.abs(value-13);
+        }
+        else{
+            result = (13-value);
+        }
+
+     document.getElementById('result').innerHTML = "The Result is: " + result;
+    }
+    </script>
+</head>
+<body>
+    <h2>Difference Calculator</h2>
+    <form>
+        <label for="number">Enter the Number: </label>
+        <input type="text" id="number" name="number"><br><br>
+        <button type="button" onclick="getDiff()">Calculate</button>
+    </form>
+    <p id="result">The Result is: </p>
+    
+</body>
+</html>
