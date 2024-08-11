@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Question 2</title>
+    <script type="text/javascript">
+        function multiply() {
+            let num1 = parseFloat(document.getElementById('num1').value);
+            let num2 = parseFloat(document.getElementById('num2').value);
+
+            let result = num1*num2;
+            document.getElementById('result').innerHTML = 'The result is: ' + result;
+        }
+
+        function divide(){
+            let num1 = parseFloat(document.getElementById('num1').value);
+            let num2 = parseFloat(document.getElementById('num2').value);
+
+            if(num2 == 0){
+                document.getElementById('result').innerHTML = 'Division by zero is not allowed'
+            }
+            else{
+            let result = num1/num2;
+            document.getElementById('result').innerHTML = 'The result is:' + result;
+            }
+        }
+    </script>
+</head>
+<body>
+    <form action="">
+    <label for="num1">1st Number :</label> 
+    <input type="text" id="num1" name="num1"><br><br>
+    <label for="num2">2nd Number :</label>
+    <input type="text" id="num2" name="num2"><br><br>
+    <button type="button" onclick="multiply()">Multiply</button> 
+    <button type="button" onclick="divide()">Divide</button>
+    </form>
+
+    <p id="result">The result is: </p>
+    
+</body>
+</html>

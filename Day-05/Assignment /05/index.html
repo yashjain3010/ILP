@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assingment 4 Question 5</title>
+    <script>
+        function getMaxi(){
+            let num1 = parseFloat(document.getElementById('num1').value);
+            let num2 = parseFloat(document.getElementById('num2').value);
+            let num3 = parseFloat(document.getElementById('num3').value);
+
+            let result;
+
+            if(num1 > num2 && num1 > num3){
+                result = num1;
+                document.getElementById('result').innerHTML = "Maximum no. is " + result;
+            }
+
+            else if (num2 > num1 && num2 > num3) {
+                result = num2;
+                document.getElementById('result').innerHTML = "Maximum no. is " + result;
+            }
+            else {
+                result = num3;
+                document.getElementById('result').innerHTML = "Maximum no. is " + result;
+            }    
+        }
+    </script>
+</head>
+<body>
+    <h2>Largest Number</h2>
+    <form action="">
+        <label for="number">Enter the Number1</label>
+        <input type="text" id="num1"><br><br>
+        <label for="number">Enter the Number2</label>
+        <input type="text" id="num2"><br><br>
+        <label for="number">Enter the Number3</label>
+        <input type="text" id="num3"><br><br>
+        <button type="button" onclick="getMaxi()">Find the Maximum</button>
+    </form>
+
+    <p id="result">The maximum no. is :- </p>
+    
+</body>
+</html>
